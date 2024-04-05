@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const arr=["Diwali","ganapati","Holi","sankrannti"]
+        const [a]=arr
+        
+        const[,,x]=arr
+        document.write(x)
+
+        // jar array madhale element sodyache astil tr",,," takaych ani bakixhe pahije astil tr"..."
+        // spread operator ...
+        const[,,...r]=arr
+        document.write(r +"<br>")
+
+
+
+        // object deconstucturing
+        const employee={
+            id:1,
+            name:"pratik",
+            phone:22335566,
+            age:25
+        }
+
+        const{name,phone}=employee
+        document.write(name+" "+ phone+"<br>")
+
+        const emp={
+            eid:1,
+            ename:"pratik",
+            ephone:22335566,
+            eaddress:{
+                city:"pune",
+                state:"maharashtra"
+            },
+            eage:25
+        }
+        const{eaddress:{city,state}}=emp
+        document.write(city+" "+state+"<br>")
+
+        const comp={
+            cname:"seven",
+            cemail:"seven@gamil.com",
+            locations:["pune","mumbai","chinchwad"]
+            
+        }
+        const{loctions:[,m]}=comp
+        document.write(m+"<br>")
+
+        const books=["james clear","balaguru",{bauthor:"mr.x",price:450.90},"xyz"]
+        const[,,{bauthor,price}]=books
+        document.write(bauthor+" "+price+"<br")
+
+
+        function getdata({cname,cemail})
+        {
+            document.write(cname+" "+cemail)
+        }
+        getdata(comp)
+       
+
+
+    </script>
+</body>
+</html>

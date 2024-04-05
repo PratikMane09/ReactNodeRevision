@@ -1,0 +1,16 @@
+
+.App {
+  text-align: center;
+}
+ input[type="text"]{
+  height: 65px;
+  width:150px;
+ }
+ li{
+  font-size: 30px;
+  color: purple;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+
+ }
